@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   top: 0;
+   right: 0;
+   left: 0;
+   color: white;
+ font-family: 'Montserrat', sans-serif;
+}
+ body{
+     overflow-y: scroll;
+     scroll-behavior: smooth;
+ }
+#page{
+    height: 520vh;
+    
+}
+#home{
+    height: 110vh;
+    width: 100%;
+   background-image: url('assets/bg.jpg');
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   position: absolute;
+   z-index: -10;
+
+}
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    font-size: 18px;
+   
+}
+nav{
+  
+   z-index: 99999999;
+    color: #fff;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    z-index: 10;
+    padding: 10px;
+    font-size: 22px;
+    transition: 0.5s ease-in;
+}
+nav ul li a:hover{
+color: #c32865;
+text-decoration: none;
+}
+.logo{
+    font-size: 24px;
+    font-weight: 500;
+}
+.logo span{
+    color: #c32865;
+}
+.contact-details{
+    margin-top: 3px;
+   font-size: 15px;
+}
+/* -----------------------------------------------Navbar Section ends---------------------------------------------------------------------- */
+#home{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+#main{
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 440px;
+}
+#main h1{
+   font-size: 48px;
+   font-weight: 600;
+}
+#h1{
+    color: #c32865;
+}
+#idk{
+    color: #c32865;
+}
+
+.social-icons{
+    position: absolute;
+    right: 50px;
+    bottom: 2%; 
+    margin-left: 1150px;
+}
+
+ 
+.social-icons ul li{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.social-icons ul li{
+  
+    color: #fff;
+    text-align: center;
+    padding: 12px 17px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.6s ease-out;
+    margin-top: 85vh;
+    z-index: 100;
+
+}
+
+.social-icons ul li a:hover{
+    
+    color: #c32865;
+    z-index: 1000;
+}
+/* ----------------------------------------------------------About Section starts-----------------------------------------*/
+.main-about-content , .main-content-about{
+    z-index: -2;
+}
+#about{
+    
+    height: 110vh;
+    
+    background-color: rgb(0, 0, 0);
+    margin-top: 100vh;
+    z-index: -1;
+}
+.img-about{
+    height: 420px;
+    width: 330px;
+    float: left;
+    border-radius: 20px;
+}
+#about p{
+    width: 550px;
+    font-size: 21.5px;
+
+}
+.main-about-content{
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#about h1{
+    
+    font-size: 50px;
+    color: #c32865;
+  
+}
+.main-content-about{
+    z-index: 100;
+}
+#about input{
+    background: transparent;
+    border: 2px solid #c32865;
+    width: 160px;
+    padding: 8px;
+    height: 55px;
+    border-radius: 28px;
+    margin-top: 5vh;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.6s ease-in;
+    z-index: 1000;
+}
+#about input:hover{
+    font-weight: bold;
+   color: rgb(255, 255, 255);
+   background-color: #c32865;
+   z-index: 100000;
+   border: none;
+}
+/* ---------------------------------------------------------SKills Section starts----------------------------------------------------------- */
+#skills{
+    margin-top: 0vh;
+    height: 90vh;
+    width: 100%;
+    font-family: 'Montserrat' , sans-serif;
+    background-color: rgb(8, 8, 8);
+    background-size: 100%;
+}
+#skills h1{
+    color: #c32865;
+    
+    text-align: center;
+    padding-top: 7vh;
+    font-size: 50px;
+    font-weight: bold;
+}
+.skills-paragraph{
+    position: relative;
+    margin-top: 40px;
+    font-size: 20px;
+}
+#skills h2{
+    color: #c32865;
+    font-weight: 400;
+    font-size: 28px;
+}
+progress{
+    height: 30px;
+    width: 400px;
+  
+}
+/* progress::-webkit-progress-value {
+
+    background: #c32865;
+    
+} */
+progress[value]::-webkit-progress-value {
+    border-radius: 40px;
+    background-color: rgb(93, 198, 233);
+  }
+  progress[value]::-webkit-progress-bar {
+    background-color: #ededed;
+    border-radius: 40px;
+  }
+.skills-progress-bar{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  
+}
+/* --------------------------------------Services Section----------------------------------------------------------- */
+#services{
+    height: 90vh;
+    font-family: 'Josefin Sans' , sans-serif;
+    background-color: #101010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+   
+}
+#h11{
+    color: #c32865;
+    top: 100px;
+   position: absolute;
+   margin-top: 300vh;
+   text-align: center;
+   font-size: 55px;
+   font-weight: 550;
+
+}
+.box{
+    width: 400px;
+    background: #191919;
+    padding: 45px 40px;
+    height: auto;
+    border-radius: 20px;
+    transition: 0.5s ease-out;
+    z-index: 20000;
+}
+#services h3{
+  font-size: 22px;
+  margin-bottom: 20px;
+  letter-spacing: 1;
+}
+.box i{
+    font-size: 36px;
+    color: #c32865;
+    margin-bottom: 20px;
+}
+.box p{
+    font-size: 18px;
+    font-weight: 450;
+    color: #fff;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.box button{
+    background: #c32865;
+    border: 2px solid #c32865;
+    padding: 10px 28px;
+    border-radius: 25px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.box button:hover{
+    background-color: #c32865;
+  color: white;
+}
+.box button , i {
+    transition: 0.5s ease-in-out;
+}
+.box i:hover{
+    color: #ededed;
+}
+.box:hover{
+    background-color: lightblue;
+}
+/* -------------------------Projects Section Starts------------------------------------------------------------------------ */
+
+#contact{
+    background-color: #000000;
+    height: 80vh;
+}
+#contactheader{
+    color: #c32865;
+    align-content: center;
+    padding: 7vh;
+}
+
+
+
+/* ----------------------------------------------------------Project Section Ends -----------------*/
+/* -----------------------------------------------Hire Me Promotion Page------------- */
+/* ----------------------------------Hire Me Promotion Page Ends */
+/* -------------------Footer Section starts---------------------------- */
+.footer-wrap{
+    position: relative;
+    margin-top: -50vh; 
+    width:100%;
+    padding:40px;
+    background: rgb(36, 35, 35);
+}
+.footer-wrap-1{
+    display: flex;
+}
+.footer-section{
+    width:22%;
+    display:block;
+    padding:10px 35px;
+}
+.footer-section:last-of-type{
+    width:34%;
+}
+.footer-section p{
+    color:#fff;
+    font-size: 16px;
+}
+.footer-section h1{
+    font-size:22px;
+    color:#fff;
+    margin-bottom:8px;
+}
+.footer-section a{
+    color:#fff;
+    display: block;
+    text-decoration: none;
+    padding:4px 0px;
+    transition: 0.6s ease;
+}
+form{
+    position:relative;
+}
+form input{
+    background: transparent;
+    position:absolute;
+    height:35px;
+    width: 220px;
+    margin:8px 0px;
+    border-bottom: 1px solid white;
+    outline:none;
+    padding:6px;
+    font-size:14px;
+    border-top: none;
+   border-right: none;
+   border-left: none;
+   transition: 0.6s ease-in;
+}
+form input:focus{
+    border-bottom: 2px solid #c32865;
+}
+form input:hover::-webkit-input-placeholder {
+    color: #c32865;
+    transition: 0.6s ease-in;
+}
+form input:focus::-webkit-input-placeholder {
+    margin-top: -100px;
+    color: #c32865;
+    transition: 0.6s ease-in-out;
+}
+.footer-section a:hover
+{
+    color: #c32865;
+    text-decoration: none;
+}
+
+form .btn{
+    height:35px;
+    background: #c32865;
+    border:none;
+    width: 130px;
+    padding:0px 6px;
+    margin:8px 0px;
+    position:absolute;
+    left:60%;
+    font-weight: 450;
+    cursor: pointer;
+    color:#fff;
+    transition: 0.6s ease-in;
+}
+.btn:hover{
+    background: transparent;
+    border: 2px solid #c32865;
+}
+.line{
+    margin-top:20px;
+    width:100%;
+    height:1px;;
+    background: rgb(143, 142, 142);
+}
+.social-link{
+    padding-top:25px;
+    text-align: center;
+}
+.social-link a{
+    text-decoration: none;
+    
+    display: inline-block;
+   
+    border-radius:20px;
+    margin: 20px;
+    height: 20px;
+}
+.social-link a i{
+    margin: 10px 10px;
+    color: white;
+    font-size: 25px;
+}
+.social-link a i:hover{
+    color: #c32865;
+}
+.footer-bottom{
+    background: rgb(34, 33, 33);
+    width:100%;
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom a{
+    color:#fff;
+    font-size:14px;
+    margin-left:20px;
+    text-decoration:none;
+}
+.first-box{
+    margin-left: 20px;
+}
+.last-box{
+    margin-right:20px;
+}
